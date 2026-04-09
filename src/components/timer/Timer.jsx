@@ -20,7 +20,6 @@ const Timer = ({
     timerCounter === 0 && player === 2 && setWhoWins(1, false);
 
     return () => clearInterval(timer);
-    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timerCounter, pause]);
 
   return (
@@ -39,8 +38,8 @@ const Timer = ({
           {player === 1
             ? `PLAYER 1'S TURN`
             : cpu
-            ? `CPU'S TURN`
-            : `PLAYER 2'S TURN`}
+              ? `CPU'S TURN`
+              : `PLAYER 2'S TURN`}
         </h3>
         <p>{`${timerCounter}s`}</p>
       </div>

@@ -6,6 +6,7 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig({
   plugins: [react(), svgr()],
   base:
+    // eslint-disable-next-line no-undef
     process.env.NODE_ENV === "production"
       ? "/324-Tag03-connect-four-game/"
       : "/",
