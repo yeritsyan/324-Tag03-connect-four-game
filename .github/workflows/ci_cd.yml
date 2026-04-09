@@ -71,6 +71,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: test # Ensure deploy runs after
+    environment:
+      name: github-pages
     steps:
       - name: Download Artifacts
         uses: actions/download-artifact@v4
