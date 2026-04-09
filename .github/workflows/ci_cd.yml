@@ -73,9 +73,6 @@ jobs:
     needs: test # Ensure deploy runs after
     environment:
       name: github-pages
-      permissions:
-        pages: write
-        id-token: write
     steps:
       - name: Download Artifacts
         uses: actions/download-artifact@v4
